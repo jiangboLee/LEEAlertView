@@ -13,6 +13,7 @@
 		B7A42C931EEC45760000A41E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A42C911EEC45760000A41E /* Main.storyboard */; };
 		B7A42C951EEC45760000A41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A42C941EEC45760000A41E /* Assets.xcassets */; };
 		B7A42C981EEC45760000A41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A42C961EEC45760000A41E /* LaunchScreen.storyboard */; };
+		B7A42CA21EECFA780000A41E /* LEEAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A42CA11EECFA780000A41E /* LEEAlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		B7A42C941EEC45760000A41E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A42C971EEC45760000A41E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A42C991EEC45760000A41E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A42CA01EECFA780000A41E /* LEEAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEAlertViewController.h; sourceTree = "<group>"; };
+		B7A42CA11EECFA780000A41E /* LEEAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEEAlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		B7A42C871EEC45760000A41E /* LEEAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				B7A42C9F1EECFA1F0000A41E /* LEEAlertView */,
 				B7A42C8B1EEC45760000A41E /* AppDelegate.h */,
 				B7A42C8C1EEC45760000A41E /* AppDelegate.m */,
 				B7A42C8E1EEC45760000A41E /* ViewController.h */,
@@ -77,6 +81,15 @@
 				B7A42C891EEC45760000A41E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7A42C9F1EECFA1F0000A41E /* LEEAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				B7A42CA01EECFA780000A41E /* LEEAlertViewController.h */,
+				B7A42CA11EECFA780000A41E /* LEEAlertViewController.m */,
+			);
+			path = LEEAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +118,7 @@
 		B7A42C7D1EEC45760000A41E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LEE;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = lijiangbo;
 				TargetAttributes = {
@@ -151,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A42CA21EECFA780000A41E /* LEEAlertViewController.m in Sources */,
 				B7A42C901EEC45760000A41E /* ViewController.m in Sources */,
 				B7A42C8D1EEC45760000A41E /* AppDelegate.m in Sources */,
 				B7A42C8A1EEC45760000A41E /* main.m in Sources */,
