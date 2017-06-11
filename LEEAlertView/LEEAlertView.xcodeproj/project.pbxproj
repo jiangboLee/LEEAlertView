@@ -14,6 +14,7 @@
 		B7A42C951EEC45760000A41E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A42C941EEC45760000A41E /* Assets.xcassets */; };
 		B7A42C981EEC45760000A41E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A42C961EEC45760000A41E /* LaunchScreen.storyboard */; };
 		B7A42CA21EECFA780000A41E /* LEEAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A42CA11EECFA780000A41E /* LEEAlertViewController.m */; };
+		B7A42CA41EED43980000A41E /* LEEAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B7A42CA01EECFA780000A41E /* LEEAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B7A42CA31EED43900000A41E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A42CA41EED43980000A41E /* LEEAlertViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B7A42C841EEC45760000A41E /* LEEAlertView */ = {
 			isa = PBXNativeTarget;
@@ -102,6 +114,7 @@
 				B7A42C811EEC45760000A41E /* Sources */,
 				B7A42C821EEC45760000A41E /* Frameworks */,
 				B7A42C831EEC45760000A41E /* Resources */,
+				B7A42CA31EED43900000A41E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -329,6 +342,7 @@
 				B7A42C9E1EEC45760000A41E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
