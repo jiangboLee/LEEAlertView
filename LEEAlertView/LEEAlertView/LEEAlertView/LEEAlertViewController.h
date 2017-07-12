@@ -28,7 +28,7 @@ typedef void(^LEEAlertVCTextFieldHandler)(UITextField * _Nonnull textField);
 
 /*More Actions*/
 //warning: actionTitles and handles must One-to-one correspondence;if donot need handle ,you can write @""(NSString class all is ok) insert.
-+ (void)showWithTitle:(nullable NSString*)title message:(nullable NSString*)message alertType:(UIAlertControllerStyle)type actionTitles:(nullable NSArray*)actionTitles handles:(nullable NSArray*)handles;
++ (void)showWithTitle:(nullable NSString*)title message:(nullable NSString*)message alertType:(UIAlertControllerStyle)type actionTitles:(nullable NSArray*)actionTitles handles:(nullable NSArray<LEEAlertViewControllerHandler>*)handles;
 
 /*TextField*/
 + (void)showTextFieldWithTitle:(nullable NSString*)title message:(nullable NSString*)message actionTitles:(nullable NSArray*)actionTitles handles:(nullable NSArray*)handles textFieldHandles:(nullable NSArray <LEEAlertVCTextFieldHandler>*)textFieldHandles;

@@ -49,7 +49,7 @@ static LEEAlertViewController* leeAlertViewController;
     [[[UIApplication sharedApplication].keyWindow rootViewController] presentViewController:alertController animated:YES completion:nil];
 }
 
-+ (void)showWithTitle:(NSString *)title message:(NSString *)message alertType:(UIAlertControllerStyle)type actionTitles:(NSArray *)actionTitles handles:(NSArray *)handles {
++ (void)showWithTitle:(NSString *)title message:(NSString *)message alertType:(UIAlertControllerStyle)type actionTitles:(NSArray *)actionTitles handles:(NSArray <LEEAlertViewControllerHandler>*)handles {
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:type];
     for (int i = 0 ; i < actionTitles.count; i ++) {
