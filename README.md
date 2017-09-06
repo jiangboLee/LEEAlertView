@@ -18,10 +18,10 @@ Even though `LEEAlertView` is written in Objective-C, it can be used in Swift wi
 (see sample Xcode project)
 ![](https://github.com/jiangboLee/LEEAlertView/blob/master/1.gif)  <br><br><br>
 #### simpleType
-```
+```objc
 [LEEAlertViewController showWithTitle:@"警告" message:@"helloWoeld"];
 ```
-```
+```objc
 [LEEAlertViewController showWithTitle:@"提示" message:@"你好啊" alertType:UIAlertControllerStyleActionSheet actionTitles:@[@"你", @"我"] handles:@[^(UIAlertAction *action){
        
         NSLog(@"你");
@@ -30,7 +30,7 @@ Even though `LEEAlertView` is written in Objective-C, it can be used in Swift wi
         NSLog(@"我");
     }]];
 ```
-```
+```objc
 [LEEAlertViewController setCancleActionStyle:0];
     [LEEAlertViewController setDestructiveActionStyle:1];
     [LEEAlertViewController showWithTitle:@"提示" message:@"你好啊" alertType:UIAlertControllerStyleActionSheet actionTitles:@[@"取消", @"警告"] handles:@[^(UIAlertAction *action){
@@ -41,7 +41,7 @@ Even though `LEEAlertView` is written in Objective-C, it can be used in Swift wi
         NSLog(@"警告");
     }]];
 ```
-```
+```objc
 [LEEAlertViewController showTextFieldWithTitle:@"提示" message:@"你好啊" actionTitles:@[@"取消"] handles:@[^(UIAlertAction *action){
         
         NSLog(@"输入的用户名%@",self.textField.text);
